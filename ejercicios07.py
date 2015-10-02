@@ -12,7 +12,7 @@ def minutes_in_weeks(weeks):
     20160
     """
 
-    return weeks*7*24*60
+    return weeks * 7 * 24 * 60
 
 
 def remainder_without_mod(numerator, divisor):
@@ -23,8 +23,7 @@ def remainder_without_mod(numerator, divisor):
     2
     """
 
-    return numerator- ((numerator/divisor)*divisor)
-
+    return numerator - ((numerator / divisor) * divisor)
 
 
 def divisible_by_3(num):
@@ -35,7 +34,8 @@ def divisible_by_3(num):
     False
     """
 
-    return num%3 == 0
+    return num % 3 == 0
+
 
 def predict_expression(x, y, prediction):
     """4: (Task 0.5.4) Conditional Expression
@@ -47,7 +47,7 @@ def predict_expression(x, y, prediction):
     4
     """
 
-    return 2**(y+(1/2)) if(x+10<10) else 2**(y-(1/2))
+    return 2 ** (y + (1 / 2)) if(x + 10 < 10) else 2 ** (y - (1 / 2))
 
 
 def squares_set(numbers):
@@ -57,7 +57,8 @@ def squares_set(numbers):
     set([16, 1, 4, 25, 9])
     """
 
-    return set([x**2 for x in numbers])
+    return set([x ** 2 for x in numbers])
+
 
 def pows_two(numbers):
     """6: (Task 0.5.6) Powers-of-2 Set Comprehension
@@ -65,7 +66,7 @@ def pows_two(numbers):
     >>> pows_two({0,1,2,3,4})
     set([8, 1, 2, 4, 16])"""
 
-    return set([2**x for x in numbers])
+    return set([2 ** x for x in numbers])
 
 
 def set_product57(xs, ys):
@@ -75,7 +76,7 @@ def set_product57(xs, ys):
     set([3, 4, 5, 6, 8, 9, 10, 12, 15])
     """
 
-    return set([x*y for x in xs for y in ys])
+    return set([x * y for x in xs for y in ys])
 
 
 def set_product58(xs, ys):
@@ -86,7 +87,7 @@ def set_product58(xs, ys):
     set([3, 4, 5, 6, 8, 10, 12, 15])
     """
 
-    return set([x*y for x in xs for y in ys if x!=y])
+    return set([x * y for x in xs for y in ys if x != y])
 
 
 def intersection(Ss, Ts):
@@ -96,8 +97,8 @@ def intersection(Ss, Ts):
     set([3, 4])
     """
 
-    return Ss&Ts
+    return Ss & Ts
 
-if __name__=="__main__":
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

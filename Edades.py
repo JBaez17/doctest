@@ -1,5 +1,6 @@
 ﻿# -*- coding:utf-8 -*-
 
+
 def edades(edad):
     """
     >>> edades(-1)
@@ -10,7 +11,7 @@ def edades(edad):
 
     >>> edades(17)
     Eres adolescente
-    
+
     >>> edades(64)
     Eres adulto
 
@@ -32,8 +33,8 @@ def edades(edad):
     elif edad <= 120:
         print ("Adulto mayor")
     else:
-    	print ("Eres Mumm-Ra")
+        print ("Eres Mumm-Ra")
 
-if __name__=="__main__":
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
